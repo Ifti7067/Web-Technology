@@ -1,0 +1,28 @@
+
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+
+        <h2>Student Login Form</h2>
+
+        <form id="loginForm" onsubmit="return collectFormData(event)">
+            <label>Email</label><br>
+            <input type="text" id="email" placeholder="Enter your email">
+            <p id="emailErr" style="color:red"></p>
+            <br>
+            <label>Password</label><br>
+            <input type="password" id="password" placeholder="Enter your password">
+            <p id="passwordErr" style="color:red"></p>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <hr>
+        <p>Wrong Submissions: <span id="failCount">0</span></p>
+    </div>
+    
+</body>
+</html>
